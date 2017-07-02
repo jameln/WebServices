@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+
+<html >
+       
+<head>
+     <title>wsBus</title>
+   <style>
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.th, .td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tr:hover{background-color:#f5f5f5}
+
+.button {
+    background-color: #008CBA; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #01B0F0;
+    color: white;
+}
+.tab{ 
+background-image: url("paper.gif");
+    background-repeat: no-repeat;
+}
+</style>
+<style>
+			.rond{
+				border-radius:50%;
+				width:100px;
+				height:100px;
+				background: linear-gradient(#f7f7f7, #e7e7e7); 
+				box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+				border:none;
+				outline:none;
+				font: 18px Tahoma bold;
+				color: #a7a7a7;
+				text-shadow: 1px 1px 1px lighgrey;
+				margin:20px;
+			}
+			div.rond{
+				text-align:center;
+			}
+			div.rond span{
+				position:relative;
+				font-size:20px;
+				top:40px;
+			}
+		</style>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #D7CC28;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+</style>
+
+</head>
+
+<body>
+ 
+	<ul>
+  <li><a class="active" href="/posts"><div class="rond">
+              <span>Home</span>
+                
+          </div></a></li>
+          <li>
+              <div align="center"><h2>Listes Etudiants</h2></div>
+          </li>
+        </ul>
+  
+     <div align="center">
+        <br/>
+        <div class="alert alert-success" >
+ 
+
+        <table class="">
+            <tr data-th-each="pp : ${ppp}">
+               
+                     <td  data-th-text="${pp}">
+                </td>
+            </tr>
+        </table>
+              
+</div>
+        <br/>
+     <table width="70%">
+         <tr><td>
+                 
+               
+                 
+    <table class="table" >
+       
+            <tr class="tr">
+                <th class="th" >Nom</th>
+                <th class="th">C.I.N</th>
+                <th class="th">Circuit</th>
+                <th class="th" width="10%">&nbsp;</th>
+                <th class="th" width="10%">&nbsp;</th>
+                
+            </tr>
+       
+           
+         
+            <tr class="tr" data-th-each="post : ${posts}">
+                <td class="td"  data-th-text="${post.nom}"></td>
+                <td class="td" data-th-text="${post.cin}"></td>
+                 <td class="td" data-th-text="${post.circuit}"></td>
+                
+                <td class="td" align="right" width="10%">
+                    <a th:href="@{'/posts/{id}/delete'(id=${post.id})}" class="delete" th:attr="name=${post.nom}">
+                        <img src="/images/delite.png" width="30%" />
+                    </a>
+                </td>
+                <td class="td" align="right" width="10%">
+                    <a th:href="@{'/posts/{id}/edit'(id=${post.id})}" class="edit" th:attr="name=${post.nom}">
+                        <img src="/images/edit.png" width="30%" />
+                    </a>
+                </td>
+            </tr>
+      
+    </table>
+                 </td></tr></table></div>
+   
+     <div align="center"><a href="/posts/new"><button class="rond">+</button></a></div>
+</body>
+</html>

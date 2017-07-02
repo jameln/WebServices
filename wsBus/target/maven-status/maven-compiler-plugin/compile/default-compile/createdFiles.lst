@@ -1,0 +1,4 @@
+com/mycompany/wsBus/Application.class
+com/mycompany/wsBus/controllers/PostController.class
+com/mycompany/wsBus/domain/Post.class
+com/mycompany/wsBus/domain/PostRepository.class

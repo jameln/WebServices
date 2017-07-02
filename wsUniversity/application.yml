@@ -1,0 +1,19 @@
+## YAML Template.
+---
+
+spring:
+  application:
+    name: wsUniversity
+
+server:
+  port: 2222
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://192.168.8.5:8761/eureka}
+  instance:
+    preferIpAddress: true
+    hostname: localhost
+  
+    

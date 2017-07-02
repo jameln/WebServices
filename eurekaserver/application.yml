@@ -1,0 +1,11 @@
+## YAML Template.
+---
+server:
+  port: 8761
+eureka:
+  instance:
+    statusPageUrlPath: ${management.contextPath}/posts
+    healthCheckUrlPath: ${management.contextPath}/health
+  client:
+    registerWithEureka: false
+    fetchRegistry: false

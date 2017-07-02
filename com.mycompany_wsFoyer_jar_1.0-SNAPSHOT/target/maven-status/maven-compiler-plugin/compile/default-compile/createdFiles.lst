@@ -1,0 +1,4 @@
+com/mycompany/foyer/Application.class
+com/mycompany/foyer/domain/Post.class
+com/mycompany/foyer/controllers/PostController.class
+com/mycompany/foyer/domain/PostRepository.class

@@ -1,0 +1,4 @@
+com/mycompany/wsUniversity/Application.class
+com/mycompany/wsUniversity/domain/PostRepository.class
+com/mycompany/wsUniversity/domain/Post.class
+com/mycompany/wsUniversity/controllers/PostController.class

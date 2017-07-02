@@ -1,0 +1,9 @@
+/home/xubuntu/NetBeansProjects/WsPortailsweb/src/main/java/com/miniprojet/springboot/configuration/RepositoryConfiguration.java
+/home/xubuntu/NetBeansProjects/WsPortailsweb/src/main/java/com/miniprojet/springboot/domain/Cite.java
+/home/xubuntu/NetBeansProjects/WsPortailsweb/src/main/java/com/miniprojet/springboot/service/CiteService.java
+/home/xubuntu/NetBeansProjects/WsPortailsweb/src/main/java/com/miniprojet/springboot/controller/ConfirmationController.java
+/home/xubuntu/NetBeansProjects/WsPortailsweb/src/main/java/com/miniprojet/Application.java
+/home/xubuntu/NetBeansProjects/WsPortailsweb/src/main/java/com/miniprojet/springboot/controller/CiteController.java
+/home/xubuntu/NetBeansProjects/WsPortailsweb/src/main/java/com/miniprojet/springboot/service/CiteServiceImpl.java
+/home/xubuntu/NetBeansProjects/WsPortailsweb/src/main/java/com/miniprojet/springboot/repository/CiteRepository.java
+/home/xubuntu/NetBeansProjects/WsPortailsweb/src/main/java/com/miniprojet/springboot/controller/HomeController.java

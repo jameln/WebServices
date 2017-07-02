@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Inscription universitaire</title>
+        <!--/*/ <th:block th:include="fragments/head :: head"></th:block> /*/-->
+    </head>
+    <body>
+        <!--/*/ <th:block th:include="fragments/header :: body"></th:block> /*/-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <!--<div class="container">-->
+                    <div class="panel panel-default">
+                        <!-- Default panel contents -->
+                        <div class="panel-heading">View cites</div>
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <label for="inputId">ID</label>
+                                <input type="text" class="form-control" id="inputId" placeholder="ID" th:field="*{cite.id}" name="id" disabled="disabled" />
+                            </div>
+                            <div class="form-group">
+                                <label for="inputcite">Last Name</label>
+                                <input type="text" class="form-control" id="inputcite" placeholder="Last Name" th:field="*{cite.cite}" name="cite" disabled="disabled" />
+                            </div>
+                            <div class="form-group">
+          
+                            <div class="text-right">
+                                <a href="/cites" th:href="@{/cites}" class="btn btn-default">Back</a>
+                                <a th:href="@{'/cites/edit/' + ${cite.id}}" class="btn btn-primary">Edit</a>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                        </div>
+                    </div>
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+        <!--/*/ <th:block th:include="fragments/js :: body"></th:block> /*/-->
+        <script src="../static/js/app.js" th:src="@{/js/app.js}"></script>
+    </body>
+</html>

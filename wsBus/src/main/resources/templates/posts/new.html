@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+
+    <html 
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      >
+<head>
+   <title>wsBus</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <style> 
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+</style>
+    <style>
+			.rond{
+				border-radius:50%;
+				width:100px;
+				height:100px;
+				background: linear-gradient(#f7f7f7, #e7e7e7); 
+				box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+				border:none;
+				outline:none;
+				font: 18px Tahoma bold;
+				color: #a7a7a7;
+				text-shadow: 1px 1px 1px lighgrey;
+				margin:20px;
+			}
+			div.rond{
+				text-align:center;
+			}
+			div.rond span{
+				position:relative;
+				font-size:20px;
+				top:40px;
+			}
+		</style>
+<style>
+    .button {
+    background-color: #008CBA; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #01B0F0;
+    color: white;
+}
+.aa{
+    color: white;
+}
+.aa:link {
+    text-decoration: none;
+}
+
+.aa:visited {
+    text-decoration: none;
+}
+
+.aa:hover {
+    text-decoration: underline;
+}
+
+.aa:active {
+    text-decoration: underline;
+}
+
+</style>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #D7CC28;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+</style>
+</head>
+<body>
+    
+   
+        <ul>
+
+            <li><a class="active" href="/posts"><div class="rond">
+                        <span>Home</span>
+
+                    </div></a></li>
+            <li>
+                <div align="center"><h2>Inscriptions Etudiants</h2></div>
+            </li>
+
+        </ul>
+
+    <div align="center">
+        
+       
+        
+    <table width="60%">
+        <tr><td><br/> 
+            <form method="post" name="comment_form" id="comment_form" action="/posts/create" role="form">
+    
+       <input type="text" class="form-control" id="message" name="message" placeholder="Nom"/>
+        
+        <input type="text" class="form-control" id="message" name="cin" placeholder="C.I.N" />
+        <input type="text" class="form-control" id="message" name="niveau" placeholder="Traget" />
+        <div align="center"><h1><button type="submit"  class="rond">Ajouter</button></h1></div>
+
+    </form> 
+                
+            </td></tr>
+        
+    </table></div>
+   
+</body>
+</html>
+
+
+
+   
+   
